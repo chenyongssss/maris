@@ -1,0 +1,8 @@
+# Private data is never committed
+.maris/
+**/.maris/
+*.env
+.env.*
+__pycache__/
+*.pyc
+.DS_Store
