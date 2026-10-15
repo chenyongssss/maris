@@ -1,0 +1,9 @@
+{
+  "fixture": true,
+  "actual_user_history_used": false,
+  "person": "hypothetical research-software developer",
+  "scope": "demo only; no persistent profile written",
+  "familiar": ["Python implementation", "Git diff", "unit testing"],
+  "learning": ["data retention semantics", "privacy lifecycle / approval boundaries"],
+  "attention_preferences": ["data validity and user commitments", "look for tests before trusting claims"]
+}

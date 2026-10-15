@@ -1,0 +1,12 @@
+{
+  "case_id": "coding-revagent-retention",
+  "source_kind": "public_repository_actual_commits",
+  "repository": "https://github.com/chenyongssss/revagent",
+  "before_commit": "42ab1cb4488051a6c4066b3053deea548d47be27",
+  "after_commit": "40b48733b1d8e9b0641dbb750c488b1f77bae2f1",
+  "before_source_url": "https://github.com/chenyongssss/revagent/blob/42ab1cb4488051a6c4066b3053deea548d47be27/src/revagent/history.py",
+  "after_source_url": "https://github.com/chenyongssss/revagent/blob/40b48733b1d8e9b0641dbb750c488b1f77bae2f1/src/revagent/history.py",
+  "after_test_url": "https://github.com/chenyongssss/revagent/blob/40b48733b1d8e9b0641dbb750c488b1f77bae2f1/tests/test_history_lifecycle.py",
+  "source_observation": "The before commit stored 30_days in record retention_rule but its history module did not enforce expiry. A subsequent commit added expiry behavior and tests.",
+  "limits": "Excerpt snapshots and repository metadata were inspected; full project checkout and full test suite were not run here. The example refers to the historical state, not the current HEAD."
+}

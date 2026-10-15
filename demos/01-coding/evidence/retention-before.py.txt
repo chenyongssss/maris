@@ -1,0 +1,17 @@
+# Selected source excerpts from the actual RevAgent commit 42ab1cb (2026-09-03).
+# Source: https://github.com/chenyongssss/revagent/blob/42ab1cb4488051a6c4066b3053deea548d47be27/src/revagent/history.py
+# These are excerpts, NOT a full runnable copy of the module.
+
+RETENTION_RULES = {"30_days", "project_lifetime", "until_deleted"}
+
+# In redact_history():
+record.update({"deidentification_status": deidentification, "redacted_at": now_iso(), "redaction_counts": counts, "retention_rule": retention_rule,
+               "preview_path": str(preview.relative_to(ws)), "preview_sha256": file_sha256(preview), "indexed": False})
+
+# In rebuild_history_index():
+if record.get("consent") == "approved" and record.get("deidentification_status") == "approved" and record.get("deletion_status") != "deleted" and preview.is_file() and file_sha256(preview) == record.get("preview_sha256"):
+    con.execute("INSERT INTO history_fts VALUES (?, ?, ?)", (record["history_id"], record["purpose"], preview.read_text(encoding="utf-8")))
+    record["indexed"] = True
+
+# The full original history.py in this commit has no retention-expiry evaluator.
+# Do not infer from this excerpt whether the application had other external retention mechanisms.

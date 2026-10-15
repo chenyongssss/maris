@@ -1,0 +1,41 @@
+[
+  {
+    "title": "PDE solver discussion [synthetic]",
+    "messages": [
+      {
+        "role": "user",
+        "content": "I am comfortable with finite-volume discretizations and CFL arguments. Please skip introductory PDE definitions."
+      },
+      {
+        "role": "assistant",
+        "content": "I'll use concise technical language."
+      },
+      {
+        "role": "user",
+        "content": "For this WENO flux modification, explain how the discrete conservation identity is preserved. I prefer an equation-first explanation."
+      }
+    ]
+  },
+  {
+    "title": "Learning backend deployment [synthetic]",
+    "messages": [
+      {
+        "role": "user",
+        "content": "I am learning web authentication and cloud deployment. I would appreciate clear explanations of authorization boundaries."
+      },
+      {
+        "role": "user",
+        "content": "When checking code changes, prioritize unverified security assumptions and tests."
+      }
+    ]
+  },
+  {
+    "title": "Excluded private conversation [synthetic]",
+    "messages": [
+      {
+        "role": "user",
+        "content": "DO NOT STAGE: this fictional private sample must be excluded unless selected. Secret-demo-value: fake-do-not-use."
+      }
+    ]
+  }
+]

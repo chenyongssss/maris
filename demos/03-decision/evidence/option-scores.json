@@ -1,0 +1,17 @@
+{
+  "notice": "All 1–5 numbers are explicit, illustrative team-judgment assumptions, NOT measured facts or model inference. Test ranking sensitivity; obtain real engineers/customer evidence before commitment.",
+  "features": ["fit_pde", "fit_eda", "demo_feasibility", "ecosystem", "differentiation", "verifiability"],
+  "options": [
+    {"id":"fmi","name":"Open-standard dynamic-system interoperability (FMI/SSP)","fit_pde":5,"fit_eda":1,"demo_feasibility":4,"ecosystem":4,"differentiation":3,"verifiability":4,
+      "scope":"Publish a small reference benchmark and FMU exchange checker; NOT a full Simulink .slx parser or replacement.","evidence":["FMI-01","FMI-02","FMI-03","FMI-04"]},
+    {"id":"cad","name":"STEP CAD geometry validation / interchange", "fit_pde":2,"fit_eda":1,"demo_feasibility":3,"ecosystem":4,"differentiation":3,"verifiability":3,
+      "scope":"Audit geometric round trips and shape properties using public STEP; NOT fidelity of proprietary feature histories.","evidence":["CAD-01","CAD-02"]},
+    {"id":"eda","name":"Open digital ASIC flow audit (RTL-to-GDS)","fit_pde":2,"fit_eda":5,"demo_feasibility":2,"ecosystem":5,"differentiation":3,"verifiability":4,
+      "scope":"Benchmark/reference reproducibility of an open EDA flow; NOT a full commercial EDA replacement.","evidence":["EDA-01","EDA-02","EDA-03"]}
+  ],
+  "scenarios": [
+    {"id":"neutral", "description":"No explicit expertise/customer constraints; ranking is descriptive only, not an approval.","weights":{"demo_feasibility":0.30,"ecosystem":0.30,"verifiability":0.30,"differentiation":0.10}},
+    {"id":"pde", "description":"Hypothetical PDE-heavy, small team, 8-week prototype priority.","weights":{"fit_pde":0.40,"demo_feasibility":0.25,"ecosystem":0.10,"differentiation":0.10,"verifiability":0.15}},
+    {"id":"eda", "description":"Hypothetical experienced EDA integration team with a digital-ASIC customer.","weights":{"fit_eda":0.45,"demo_feasibility":0.10,"ecosystem":0.15,"differentiation":0.10,"verifiability":0.20}}
+  ]
+}

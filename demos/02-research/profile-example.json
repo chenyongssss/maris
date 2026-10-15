@@ -1,0 +1,9 @@
+{
+  "fixture": true,
+  "actual_user_history_used": false,
+  "person": "hypothetical numerical-PDE researcher",
+  "scope": "demo only; does not read or persist any actual user history",
+  "familiar": ["elliptic PDEs", "harmonic functions", "PINN residual losses"],
+  "learning": ["operational distinction between identifiability and stability estimates"],
+  "attention_preferences": ["mathematical assumptions", "counterexamples", "avoid unsupported paper claims"]
+}

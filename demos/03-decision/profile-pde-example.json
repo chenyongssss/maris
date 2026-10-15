@@ -1,0 +1,8 @@
+{
+  "fixture": true, "actual_user_history_used": false,
+  "person":"hypothetical numerical-simulation research founding team",
+  "scope":"demo only; not a finding about the real user's abilities or company",
+  "familiar":["PDE solvers","numerical validation","Python automation"],
+  "constraints":["8-week public demonstrator","avoid proprietary tool assets","prefer numerically checkable outputs"],
+  "unconfirmed":["buyer segment","licensing advice","team budget and staffing"]
+}

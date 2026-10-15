@@ -1,0 +1,8 @@
+{
+  "fixture": true, "actual_user_history_used": false,
+  "person":"hypothetical chip-design automation team",
+  "scope":"demo only; explicit alternative persona",
+  "familiar":["Yosys synthesis","OpenROAD physical design","digital ASIC toolchains"],
+  "constraints":["public PDK availability","digital chip-flow integration customer","flow reproducibility"],
+  "unconfirmed":["buyer willingness to pay","PDK license and usage terms"]
+}

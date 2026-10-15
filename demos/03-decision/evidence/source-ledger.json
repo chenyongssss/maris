@@ -1,0 +1,16 @@
+{
+  "reviewed_on": "2026-10-15",
+  "scope": "Public documentation of existing open engineering software; documentation confirms availability/features, NOT suitability for a company's product, benchmark performance, or legal permission for any proprietary-format reverse engineering.",
+  "facts": [
+    {"id":"FMI-01","subject":"FMI standard", "claim":"FMI defines a public interface for exchange/co-simulation of dynamic models; an official implementer's guide is available.","url":"https://modelica.github.io/fmi-guides/main/fmi-guide/", "class":"documented_standard"},
+    {"id":"FMI-02","subject":"OpenModelica FMI", "claim":"OpenModelica documents FMI export/import, with version-specific support/limitations.","url":"https://openmodelica.org/doc/OpenModelicaUsersGuide/latest/fmitlm.html", "class":"documented_tool_capability"},
+    {"id":"FMI-03","subject":"OMSimulator", "claim":"OMSimulator is an FMI/SSP-oriented simulator with API/CLI integration.","url":"https://openmodelica.org/doc/OpenModelicaUsersGuide/latest/omsimulator.html", "class":"documented_tool_capability"},
+    {"id":"FMI-04","subject":"Xcos", "claim":"Xcos provides a block-diagram editor/simulator for hybrid dynamical systems.","url":"https://help.scilab.org/section_69f638779d3eaecdd1ef4c139dd6e3c3", "class":"documented_tool_capability"},
+    {"id":"CAD-01","subject":"FreeCAD", "claim":"FreeCAD is a parametric CAD modeler and documents STEP/IGES exchange and scripting features.","url":"https://www.freecad.org/", "class":"documented_tool_capability"},
+    {"id":"CAD-02","subject":"OCCT", "claim":"Open CASCADE documents STEP processor import/export support; representation of higher-level design history is separate from basic shape exchange.","url":"https://documentation.help/Open-Cascade/occt_user_guides__step.html", "class":"documented_tool_capability"},
+    {"id":"EDA-01","subject":"OpenROAD", "claim":"OpenROAD provides an open source RTL-to-GDSII physical design flow infrastructure.","url":"https://openroad.org/", "class":"documented_tool_capability"},
+    {"id":"EDA-02","subject":"OpenROAD Flow", "claim":"OpenROAD Flow documentation describes the Yosys/OpenROAD/KLayout toolchain and integration scripts.","url":"https://github.com/The-OpenROAD-Project/OpenROAD-flow-scripts/blob/master/docs/user/UserGuide.md", "class":"documented_tool_capability"},
+    {"id":"EDA-03","subject":"KiCad", "claim":"KiCad handles schematics and PCB layout, a different scope from RTL-to-GDS digital ASIC flow.","url":"https://www.kicad.org/about/kicad/", "class":"documented_tool_capability"}
+  ],
+  "unverified": ["tool versions and exact local install", "cross-tool numerical equivalence", "license obligations in the intended distribution", "proprietary file-format interoperability", "customer demand and pricing", "project effort estimates", "end-to-end workflow execution"]
+}

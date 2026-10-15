@@ -1,0 +1,21 @@
+# Selected source excerpts from the actual RevAgent commit 40b48733 (2026-09-03).
+# Source: https://github.com/chenyongssss/revagent/blob/40b48733b1d8e9b0641dbb750c488b1f77bae2f1/src/revagent/history.py
+# These are excerpts, NOT a full runnable copy of the module.
+
+# In _expire_history_records():
+anchor = _parse_time(record.get("approved_at")) or _parse_time(record.get("redacted_at"))
+if record.get("deletion_status", "active") != "active" or record.get("retention_rule") != "30_days" or not anchor or current < anchor + timedelta(days=30):
+    continue
+preview = ws / str(record.get("preview_path", ""))
+if preview.is_file(): preview.unlink()
+record.update({"deletion_status": "expired", "deletion_reason": "retention_expired", "expired_at": current.isoformat(),
+               "indexed": False, "preview_path": "", "preview_sha256": ""})
+
+# In rebuild_history_index():
+if enforce_retention: _expire_history_records(base)
+
+# In search_history():
+enforce_history_retention(base)
+
+# In export_history():
+enforce_history_retention(base)
